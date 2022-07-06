@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: rgb(134, 192, 226);
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Handling Lists</h1>
+
+    <h2>Ordered Lists (ol)</h2>
+    <p>An ordered list in HTML means that the items in that list will be ordered according to the selected type (1, A, a, I, i). They can have a starting point (using the 'start' attribute) or just start from the beginning.</p>
+    <ol type="1" start="1">
+        <li>Wake up
+        <li>Brush teeth
+        <li>Have breakfast
+        <li>Learn a skill
+        <li>Have a break
+        <li>Lunch
+    </ol>
+    <p>To create an ordered list, we first indicate the type of list using the tags &lt;ol&gt; and &lt;&frasl;ol&gt;. The items in the list should be included inside these tags using &lt;li&gt; (since HTML5, the closing tag for 'li' is not required).</p>
+
+    <h2>Unordered Lists (ul)</h2>
+    <p>An unordered list in HTML does not order items by any numerical or alphabetical order: a simple marker is placed before the item name (The attribute 'type' can change the marker (disc, circle, square)). Therefore, the items' position in this list is irrelevant.</p>
+    <ul type="circle">
+        <li>League of Legends
+        <li>Genshin Impact
+        <li>Elden Ring
+        <li>Valorant
+        <li>Sekiro: Shadows die twice
+        <li>Paladins
+        <li>Brawlhalla
+    </ul>
+    <p>To create an unordered list, we first indicate the type of list using the tags &lt;ul&gt; and &lt;&frasl;ul&gt;. The items in the list should be included inside these tags using &lt;li&gt; (since HTML5, the closing tag for 'li' is not required).</p>
+
+    <h2>Joining Lists</h2>
+    <h3>Example 1: Programming languages</h3>
+    <ol>
+        <li>Old</li>
+        <ol type="a">
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+            <li>Pascal</li>
+        </ol>
+        <li>New</li>
+        <ol type="a">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>C#</li>
+        </ol>
+    </ol>
+    <h3>Example 2: My favorite games</h3>
+    <ol>
+        <li>Computer</li>
+        <ul type="square">
+            <li>League of Legends</li>
+            <li>Elden Ring</li>
+            <li>Genshin Impact</li>
+            <li>Teamfight Tactics</li>
+            <li>Dark Souls</li>
+            <ul type="circle">
+                <li>Dark Souls: Remastered (2018)</li>
+                <li>Dark Souls II</li>
+                <li>Dark Souls III</li>
+            </ul>
+        </ul>
+        <li>Playstation</li>
+        <ul type="square">
+            <li>Fortnite</li>
+            <li>Fallout 4</li>
+            <li>Cities Skylines</li>
+        </ul>
+        <li>Phone</li>
+        <ul type="square">
+            <li>Sudoku</li>
+            <li>Ludo King</li>
+            <li>Archero</li>
+            <li>Chess</li>
+        </ul>
+    </ol>
+
+    <h2>Description Lists</h2>
+    <dl> <!--Description List-->
+        <dt>League of Legends</dt> <!-- Definition Term-->
+        <dd>League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.</dd><!-- Definition Description-->
+        <dt>Elden Ring</dt>
+        <dd>Elden Ring is an action role-playing game played in a third-person perspective with gameplay focusing on combat and exploration; it features elements similar to those found in other games developed by FromSoftware, such as the Souls series, Bloodborne, and Sekiro.</dd>
+    </dl>
+    
+</body>
+</html>

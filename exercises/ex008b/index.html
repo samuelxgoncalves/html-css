@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other text formatting types</title>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Other text formatting types</h1>
+
+    <h2>Source code / Preformatted text</h2>
+    <p>The following command is written in JavaScript language: <code>document.getElementById('test')</code> by using &lt;code&gt; and &lt;&frasl;code&gt; tags.</p>
+    <p>Multiple lines of code can also be done by using the same tag within &lt;pre&gt; and &lt;&frasl;pre&gt; tags:</p>
+    <pre>
+        <code>
+    num = int(input('Type a number: '))
+    if num % 2 == 0:
+        print(f'{num} is EVEN!')
+    else:
+        print(f'{num} is ODD!')
+    print('Program finished.')
+        </code>
+    </pre>
+    <p>&lt;pre&gt; and &lt;&frasl;pre&gt; tags work in displaying text in the webpage in the same way as they are written in HTML.</p>
+
+    <h2>Simple quotation</h2>
+    <p>As Uenoyama said to Mafuyu: <q>Would you stop looking like the whole world ended over a broken string?! Now I feel bad, like I got your hopes up just so they could crash back down! Gimme back my naptime, damn it!</q></p>
+    <p>This quote can be done by using &lt;q&gt; and &lt;&frasl;q&gt; tags. They wrap the quote in quotation marks, giving it a semantic meaning.</p>
+
+    <h2>Quotation</h2>
+    <p>According to Stepthen Corda in <em>Introduction to Aerospace Engineering with a Flight Test Perspective</em>:</p>
+    <blockquote cite="https://books.google.pt/books?id=frfBDQAAQBAJ&printsec=frontcover&dq=aerospace+engineering&hl=pt-PT&sa=X&redir_esc=y#v=onepage&q=aerospace%20engineering&f=false">
+        As an aerospace engineer, you have the opportunity to contribute to the first flight of a new aircraft, a new spacecraft, or a new technology.
+    </blockquote>
+    <p>A block of quote can be done using, as the name would suggest, &lt;blockquote&gt; and &lt;&frasl;blockquote&gt; tags. This tag gives the option to use the parameter 'cite' to specify the source of the quotation (usually a URL).</p>
+
+    <h2>Abbreviations</h2>
+    <p>The source code of this webpage is written in <abbr title="Hypertext Markup Language">HTML</abbr> and has <abbr title="Cascading Style Sheets">CSS</abbr> as it stylesheet.</p>
+    <p>To achieve this, &lt;abbr&gt; and &lt;&frasl;abbr&gt; tags can be used with the parameter 'title' to specify the full abbreviation.</p>
+
+    <h2>Inverted Text</h2>
+    <p><bdo dir="rtl">This is a sentence which can be hardly read.</bdo></p>
+    <p>This effect can be done by using &lt;bdo&gt; and &lt;&frasl;bdo&gt; tags (Bi-Directional Override) with the parameter 'dir' to specify text directionality ('rtl' for right to left; 'ltr' for left to right).</p>
+    
+</body>
+</html>

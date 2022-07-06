@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    <style>
+        h1 { /* box-level element */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkslategray;
+            padding: 10px;
+            margin: 10px auto 10px auto;
+            outline: 5px dashed blue;
+        }
+
+        a { /* inline element */
+            border: 5px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    
+    <h1>Block-level element example</h1>
+    <p>Paragraphs are block-level elements, but <a href="#">links</a> are inline elements.</p>
+    
+</body>
+</html>

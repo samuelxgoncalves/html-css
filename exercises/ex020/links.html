@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS pseudo-elements </title>
+    <style>
+        /* Custom selectors
+            # id
+            . class
+            : pseudo-class
+            :: pseudo-element
+            > children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::before {
+            content: '→ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    
+    <h1>Customizing Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Github classes repository</a></li>
+        <li><a href="https://youtube.com" target="_blank">Youtube channel</a></li>
+        <li><a href="https://discord.com/app" target="_blank">Discord</a></li>
+    </ul>
+</body>
+</html>

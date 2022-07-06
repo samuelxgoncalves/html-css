@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training responsive images</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: rgb(134, 192, 226);
+        }
+    </style>
+</head>
+<body>
+    <a href="../../root.html">../root</a>
+    <h1>Responsive image</h1>
+
+    <p>Try opening this website in different devices or simply change the browser window size.</p>
+
+    <picture>
+        <source media="(min-width: 1020px)" srcset="images/large-image.png" type="image/png">
+        <source media="(min-width: 720px)" srcset="images/medium-image.png" type="image/png">
+        <img src="images/small-image.png" alt="Dynamic image">
+    </picture>
+    
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*
+    in HTML id="title", in CSS #title (only one element)
+    in HTML class="subtitle", in CSS .subtitle (more than one element)
+
+*/
+
+body {
+    background-color: #D9CB9E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #2A2C2B;
+}
+
+h1#main-title {
+    text-align: center;
+    background-color: #374140;
+    color: #D9CB9E;
+    border-radius: 7px;
+}
+
+h2 {
+    color: #DC3522;
+}
+
+.basic {
+    color: #DC3522;
+}
+
+.intermediate {
+    color: #22a7dc;
+}
+
+.advanced {
+    color: #dc2269;
+}
+
+.highlight {
+    background-color: #a19878;
+}
+
+p {
+    text-align: justify;
+}

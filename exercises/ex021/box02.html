@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 3px 10px 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.445);
+        }
+
+        nav {
+            background-color: rgb(97, 97, 97);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.384);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 3px 10px 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.445);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(153, 150, 150);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>    
+    <header>
+        <h1>My website</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="topics">
+            <p>Sports, Politics, Technology</p>
+        </section>
+        <section id="news">
+            <article>
+                <h2>Lorem New</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus deserunt molestias hic, perferendis corrupti nobis quas! Eaque vitae accusantium assumenda unde! Iure deserunt possimus quod enim corrupti laudantium odio repellat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vitae earum facere culpa deleniti ipsa voluptatibus eligendi nostrum, aliquid dolor totam similique sed ipsam nesciunt dolore ad ut sequi. Perspiciatis.</p>
+                <aside>
+                    <p>Written by sam.</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Ipsum New</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellendus provident sed ipsam neque voluptatum suscipit, quidem, voluptate necessitatibus consequuntur id minima numquam officiis cumque sit earum! Nihil, illum autem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque labore illo obcaecati doloremque maxime autem, tempore sequi at ipsam totam dignissimos eveniet, assumenda et necessitatibus id animi, aperiam quae! Eum.</p>
+                <aside>
+                    <p>Written by sam.</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Dolor New</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis inventore, odio eaque libero, illum cum veniam dolorem, nihil expedita neque provident quisquam eveniet cupiditate labore suscipit. Sunt, cum voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur facilis, autem eveniet et quo expedita dolore eos, illo doloremque dolor sit beatae quidem, quis fugit deserunt delectus hic veniam voluptates.</p>
+                <aside>
+                    <p>Written by sam.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by sam.</p>
+    </footer>
+    
+</body>
+</html>

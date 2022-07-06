@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 media</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: rgb(134, 192, 226);
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Responsive images</h1>
+
+    <p>Try opening this website in different devices or simply change the browser window size.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/small-image.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/medium-image.png" type="image/png">
+        <img src="images/large-image.png" alt="Dynamic image">
+    </picture>
+
+    <h1>Playing an audio file</h1>
+    <p>Let's play an audio in HTML5.</p>
+    <!-- MP3 OGG WAV-->
+    <audio preload="auto" controls>
+        <source src="media/scifi.mp3" type="audio/mpeg">
+        <source src="media/scifi.ogg" type="audio/ogg">
+        <source src="media/scifi.wav" type="audio/wav">
+        <p>Unfortunately your browser could not play audio. Click <a href="media/guanacast-33.mp3">here</a> to download the .mp3 file.</p>
+
+        <!-- This order matters as it tries to load the first source, then the second, until the last one until there is no source left. In this case, the paragraph shows up and asks the user if they want to download the file.-->
+
+        <!-- <audio> element attributes: preload, controls, autoplay, loop.-->
+
+        <!-- 'preload' audio attribute: hints the browser about what to load from the audio.-->
+
+        <!-- WAV files tend to be large so avoid using it.-->
+    </audio>
+
+</body>
+</html>

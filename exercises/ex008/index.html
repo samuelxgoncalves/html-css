@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text formatting</title>
+    <style>
+        mark {
+            background-color: rgb(209, 126, 30);
+        }
+    </style> <!-- Changing the default bg color for all mark tags-->
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Main Formating Elements</h1>
+
+    <h2>Bold / Highlighted</h2>
+    <p>In this phrase, there can be <b>bold words</b> using &lt;b&gt; and &lt;&frasl;b&gt; tags (non semantic, hence, deprecated).</p>
+    <p>In comparison, in this phrase there are <strong>hightlighted words</strong> using &lt;strong&gt; and &lt;&frasl;strong&gt; tags (semantic).</p>
+
+    <h2>Italic / Emphasis</h2>
+    <p><i>Italic words</i> are also possible using &lt;i&gt; and &lt;&frasl;i&gt; tags (non semantic, hence, deprecated).</p>
+    <p>In comparison, in this phrase there are <em>emphasized words</em> using &lt;em&gt; and &lt;&frasl;em&gt; tags (semantic).</p>
+
+    <h2>Marked Text</h2>
+    <p>There can be <mark>marked text</mark> using &lt;mark&gt; and &lt;&frasl;mark&gt; tags</p>
+    <p><mark style="background-color: aqua;">Marked text</mark> color can be changed by using the attribute inside of tag (uses CSS)</p>
+
+    <h2>Big text and small text</h2>
+    <p>In this paragraph there are <big>big sized words</big> and <small>small sized words</small>. Although it works just fine, &lt;big&gt; is deprecated but &lt;small&gt; can still be used.</p>
+    <p>Reason: &lt;big&gt; just makes words have a greater size than the rest, giving it no meaning behind it (non semantic); &lt;small&gt;, on the other hand, can be used to create fine prints in some agreements, giving it a semantic meaning.</p>
+
+    <h2>Deleted Text</h2>
+    <p><del>Deleted text</del> can be done by using &lt;del&gt; and &lt;&frasl;del&gt; tags. It is marked as deleted to indicate that it can be read but not considered.</p>
+
+    <h2>Inserted Text</h2>
+    <p><ins>Inserted text</ins> emphasizes that it was added later on and can be achieved by using &lt;ins&gt; and &lt;&frasl;ins&gt; tags.</p>
+    <p>Using &lt;u&gt; and &lt;&frasl;u&gt; tags, <u>text can also be marked as underlined</u>, although it has no semantic value.</p>
+
+    <h2>Superscript Text</h2>
+    <p>Superscript text can be used in some mathematical terms such as in x<sup>6</sup>+3 (where 6 is superscript). It can be done by using &lt;sup&gt; and &lt;&frasl;sup&gt; tags.</p>
+
+    <h2>Subscript Text</h2>
+    <p>Some chemical formulas make use of subscript text such as H<sub>2</sub>O (where 2 is subscript). It can be done by using &lt;sub&gt; and &lt;&frasl;sub&gt; tags.</p>
+</body>
+</html>

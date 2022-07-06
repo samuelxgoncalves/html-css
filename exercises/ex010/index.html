@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: rgb(134, 192, 226);
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Links in HTML5</h1>
+
+    <h2>Using external links</h2>
+    <p>The tags &lt;a&gt; and &lt;&frasl;a&gt; creates a link to an external destination. It is recommended to use the attribute 'target="_blank"' to allow the original website to remain open.</p>
+    <p>The following websites can be accessed by clicking their link:</p>
+    <pre>
+    <a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a>
+    <a href="https://www.instagram.com/" target="_blank" rel="external">Instagram</a>
+    <a href="https://www.twitch.tv/" target="_blank" rel="external">Twitch</a>
+    <a href="https://discord.com/app/" target="_blank" rel="external">Discord</a>
+    </pre>
+
+    <h2>Using internal links</h2>
+    <p>Internal links redirects the user to another webpage within the original server and relates to the previous webpage. These links can be created using &lt;a&gt; and &lt;&frasl;a&gt; tags and the attribute 'target' should be set as '_self' allowing navegation in the website within the same browser tab.</p>
+    <pre>
+    Click <a href="page002.html" target="_self" rel="next">here</a> to access the second webpage.
+    Click <a href="news/page003.html" target="_self" rel="next">here</a> to access the news webpage.
+    </pre>
+
+    <h2>Links for downloads</h2>
+    <ul>
+        <li><a href="book/01 - História da Internet.pdf" download="book.pdf" type="application/pdf">Download PDF Book</a></li>
+        <li><a href="book/01 - História da Internet.zip" download="book.zip" type="application/zip">Download zipped PDF Book</a></li>
+    </ul>
+
+    
+    <!-- hreflang="" can be used as an <a> attribute to indicate the target website language-->
+    <!-- If using an internal link, a short URL is all needed to anchor the destination-->
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training: custom selectors</title>
+    <style>
+        a#root {
+            color: black;
+        }
+        body {
+            background-color: #E4F2E7;
+        }
+
+        div#menu-img {
+            content: url('images/menu.png');
+        }
+
+        div#menu {
+            width: 43px;
+            height: 43px;
+        }
+
+        div#menu > div#menu-drop {
+            display: none;
+        }
+
+        div#menu:hover {
+            cursor: pointer;
+        }
+
+        div#menu:hover > div#menu-img {
+            transform: rotate(90deg);
+        }
+
+        div#menu:hover > div#menu-drop {
+            display: block;
+            background-color: #2D3E40;
+            padding-top: 25px;
+            padding-left: 30px;
+            border-radius: 10px;
+            width: 250px;
+            height: 400px;
+            cursor: default;
+        }
+
+        li {
+            font: normal 26px Arial, sans-serif;
+            color: #E4F2E7;
+            padding-bottom: 50px;
+            letter-spacing: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #E4F2E7;
+        }
+    </style>
+</head>
+<body>
+    <a id="root" href="../root.html">../root</a>
+    
+    <div id="menu">
+        <div id="menu-img"></div>
+        <div id="menu-drop">
+            <ul type="circle">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://discord.com/app" target="_blank">Discord</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

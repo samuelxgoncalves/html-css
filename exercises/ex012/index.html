@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos in HTML5</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: rgb(134, 192, 226);
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Locally hosted videos</h1>
+
+    <p>This is a locally hosted video (website server)</p>
+    <video width="560" controls autoplay loop poster="images/tumb.jpg">
+        <source src="media/awaken-lol.mp4" type="video/mp4">
+        <source src="media/awaken-lol.m4v" type="video/mp4">
+        <source src="media/awaken-lol.webm" type="video/webm">
+        <source src="media/awaken-lol.ogv" type="video/ogg">
+        <p>This video is not supported on your device. Click <a href="media/awaken-lol.mp4">here</a> to download the .mp4 file.</p>
+    </video>
+
+    <h1>Externally hosted videos</h1>
+    <p>This is externally hosted video (some other video streaming platform)</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zF5Ddo9JdpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

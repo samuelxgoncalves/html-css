@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 007</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: rgb(134, 192, 226);
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="../../../exercises/root.html">../root</a>
+    <h1>Challenge 007</h1>
+    <hr>
+
+    <h2>Responsive images</h2>
+    <p>Try changing your browser window size to see the image change!</p>
+    
+    <picture>
+        <source media="(min-width: 1210px)" srcset="images/landscape-l.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="images/landscape-m.png" type="image/png">
+        <img src="images/landscape-s.png" alt="Landscape">
+    </picture>
+    
+    
+</body>
+</html>
