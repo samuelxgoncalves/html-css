@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background size</title>
+    <title>Background size: cover</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
-            background-image: url('images/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
+            /*
+                background-color: black;
+                background-image: url('images/wallpaper002.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            */
+
+            /* background shorthand
+            
+                    color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('images/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +38,10 @@
 <body>
     <main>
         <h1>Background image testing</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptas tempora accusantium ipsa dolore placeat perferendis aut repudiandae tempore recusandae repellendus, repellat magnam corporis incidunt culpa autem sit, similique accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil doloremque officiis, fuga maiores dicta numquam quis, velit delectus rem qui quod atque. Aperiam vitae quasi reprehenderit velit, ipsum quidem nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, blanditiis facere odio quia, possimus in, suscipit quam placeat voluptate incidunt ipsam. Cumque doloremque voluptatem numquam labore libero, consequuntur quaerat praesentium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptas tempora accusantium ipsa dolore placeat perferendis aut repudiandae tempore recusandae repellendus, repellat magnam corporis incidunt culpa autem sit, similique accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil doloremque officiis, fuga maiores dicta numquam quis, velit delectus rem qui quod atque. Aperiam vitae quasi reprehenderit velit, ipsum quidem nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, blanditiis facere odio quia, possimus in, suscipit quam placeat voluptate incidunt ipsam. Cumque doloremque voluptatem numquam labore libero, consequuntur quaerat praesentium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptas tempora accusantium ipsa dolore placeat perferendis aut repudiandae tempore recusandae repellendus, repellat magnam corporis incidunt culpa autem sit, similique accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil doloremque officiis, fuga maiores dicta numquam quis, velit delectus rem qui quod atque. Aperiam vitae quasi reprehenderit velit, ipsum quidem nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, blanditiis facere odio quia, possimus in, suscipit quam placeat voluptate incidunt ipsam. Cumque doloremque voluptatem numquam labore libero, consequuntur quaerat praesentium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptas tempora accusantium ipsa dolore placeat perferendis aut repudiandae tempore recusandae repellendus, repellat magnam corporis incidunt culpa autem sit, similique accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil doloremque officiis, fuga maiores dicta numquam quis, velit delectus rem qui quod atque. Aperiam vitae quasi reprehenderit velit, ipsum quidem nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, blanditiis facere odio quia, possimus in, suscipit quam placeat voluptate incidunt ipsam. Cumque doloremque voluptatem numquam labore libero, consequuntur quaerat praesentium!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptas tempora accusantium ipsa dolore placeat perferendis aut repudiandae tempore recusandae repellendus, repellat magnam corporis incidunt culpa autem sit, similique accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil doloremque officiis, fuga maiores dicta numquam quis, velit delectus rem qui quod atque. Aperiam vitae quasi reprehenderit velit, ipsum quidem nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, blanditiis facere odio quia, possimus in, suscipit quam placeat voluptate incidunt ipsam. Cumque doloremque voluptatem numquam labore libero, consequuntur quaerat praesentium!</p>
     </main>
     
