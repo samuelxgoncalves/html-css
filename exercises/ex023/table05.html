@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping columns with colgroup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        col.col-name {
+            background-color: cyan;
+        }
+
+        col.col-group {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+
+    <h1>Grouping columns</h1>
+    <table>
+        <colgroup>
+            <col class="col-name">
+            <col class="col-group" span="2">
+            <col class="col-prof">
+        </colgroup>
+        <caption>
+            Sign up
+        </caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Age</th>
+            <th scope="col">Profession</th>
+        </tr>
+        <tr>
+            <td>Joe John</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Journalist</td>
+        </tr>
+        <tr>
+            <td>Mark Sins</td>
+            <td>M</td>
+            <td>24</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Arya Stark</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Programmer</td>
+        </tr>
+        <tr>
+            <td>Robb Lannister</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Medic</td>
+        </tr>
+        <tr>
+            <td>Myrcella Bolton</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Market Seller</td>
+        </tr>
+        <tr>
+            <td>Dave Peter</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Writer</td>
+        </tr>
+    </table>    
+</body>
+</html>
