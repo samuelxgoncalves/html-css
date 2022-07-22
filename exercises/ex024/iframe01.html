@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframes</title>
     <style>
-        
+        iframe {
+            width: 500px;
+            height: 500px;
+            border: 1px dashed black;
+        }
     </style>
 </head>
 <body>
     <a href="../root.html">../root</a>
     
     <h1>Testing iframes</h1>
+    <!-- Default size: 300x150 -->
     <p>
         Accessing a 
-        
-        <iframe src="https://cursoemvideo.com" frameborder="0"></iframe>
-
+        <iframe src="https://cursoemvideo.com" frameborder="0" height="500" scrolling="yes">
+            <!-- For devices that dont support iframes -->
+            <a href="https://cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+        </iframe>
         website
     </p>
     <p>
-        Google <iframe src="https://google.com" frameborder="0"></iframe> is nice
+        My html-css repository 
+        <iframe src="https://samuelxgoncalves.github.io/html-css" frameborder="0" width="500" height="500">
+            <a href="https://samuelxgoncalves.github.io/html-css" target="_blank">My html-css repository</a>
+        </iframe>
+        is nice
     </p>
     
 </body>
