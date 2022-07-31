@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms: text boxes and passwords</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Form test</h1>
+
+    <form action="sign-up.php" method="post" autocomplete="on">
+        <p>
+            <label for="id-user">Username: </label>
+            <input type="text" name="user" id="id-user" required minlength="5" maxlength="15" size="15" placeholder="username" autocomplete="username">
+        </p>
+        <p>
+            <label for="id-pass">Password: </label>
+            <input type="password" name="pass" id="id-pass" required minlength="8" maxlenght="20" size="8" placeholder="password" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+    <!-- size attr in input specifies how many characters fit into the input text -->
+    
+</body>
+</html>
