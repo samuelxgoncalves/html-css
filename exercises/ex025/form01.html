@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>My first Form in HTML5</h1>
+
+    <form action="sign-up.php" method="POST" autocomplete="off">
+        <p><label for="id-name">Name:</label> 
+            <input type="text" name="name" id="id-name"></p>
+
+        <p><label for="id-last-name">Last Name:</label> 
+            <input type="text" name="last-name" id="id-last-name"></p>
+
+        <p><input type="submit" value="Submit"></p>
+    </form>
+
+    <!-- action attr sends data when submit button is pressed -->
+    <!-- name attr is more useful for HTML and PHP, id attr is more useful for Javascript -->
+    <!-- GET and POST methods:
+            GET: default method (only 3000 Bytes can be sent this way) used for sending not confidential data
+            
+            POST: used for sending sensible data, files (can send more than 3000 Bytes)
+    -->
+    
+</body>
+</html>
