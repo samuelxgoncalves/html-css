@@ -12,7 +12,34 @@
 </head>
 <body>
     <a href="../root.html">../root</a>
-    
+    <h1>Form Testing</h1>
+
+    <form action="sign-up.php" method="get" autocomplete="on">
+        <p>
+            <label for="id-name">Name: </label>
+            <input type="text" name="name" id="id-name" required maxlength="30" placeholder="Full Name" autocomplete="name">
+        </p>
+        <p>
+            <label for="id-average">Average: </label>
+            <input type="number" name="average" id="id-average" required min="0" max="20" placeholder="0-20" step="0.01" value="10">
+        </p>
+        <p>
+            <label for="id-month">School term: </label>
+            <input type="month" name="month" id="id-month" required value="2022-07">
+        </p>
+        <p>
+            <label for="id-day">Exame day: </label>
+            <input type="date" name="day" id="id-day" required value="2022-07-31">
+        </p>
+        <p>
+            <label for="id-time">Exame time</label>
+            <input type="time" name="time" id="id-time" required>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
     
 </body>
 </html>
