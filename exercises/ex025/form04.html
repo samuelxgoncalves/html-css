@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms: telephone and email</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        form fieldset legend {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Form Testing</h1>
+
+    <form action="sign-up.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Personal</legend>
+            <p>
+                <label for="id-name">Name:</label>
+                <input type="text" name="name" id="id-name" required minlength="2" maxlength="20" autocomplete="name">
+            </p>
+            <p>
+                <label for="id-email">E-mail:</label>
+                <input type="email" name="email" id="id-email" required autocomplete="email">
+            </p>
+            <p>
+                <label for="id-tel">Phone:</label>
+                <input type="tel" name="tel" id="id-tel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+    
+</body>
+</html>
+
+<!-- 
+
+    To study: Regular expressions [RegEx]: manage basic data validation
+    \d = [0-9]
+
+-->
