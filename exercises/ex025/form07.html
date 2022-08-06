@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms: select, datalist and textarea</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Form testing</h1>
+
+    <form action="sign-up.php" method="post" autocomplete="on">
+        <p>
+            <label for="id-state">State: </label>
+            <select name="state" id="id-state">
+                <option value="" selected>--- Choose a State ---</option>
+                <optgroup label="3 States">
+                    <option value="AL">Alabama</option>
+                    <option value="CA">California</option>
+                    <option value="FL">Florida</option>
+                </optgroup>
+                <optgroup label="4 States">
+                    <option value="IL">Illinois</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="MA">Massachussets</option>
+                    <option value="NV">Nevada</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="id-prof">Profession: </label>
+            <input type="text" name="prof" id="id-prof" list="iddl-prof">
+            <datalist id="iddl-prof">
+                <option>Administrator</option>
+                <option>Professor</option>
+                <option>Accountant</option>
+                <option>Musician</option>
+                <option>Medic</option>
+                <option>Engineer</option>
+                <option>Developer</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="id-message">Message: </label><br>
+            <textarea name="message" id="id-message" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+    
+    <!-- POST method should be used when using textarea in forms -->
+
+</body>
+</html>
