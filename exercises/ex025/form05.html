@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms: checkbox and radio button</title>
+    <style>
+        fieldset {
+            columns: 2;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Form testing</h1>
+
+    <form action="sign-up.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sex</legend>
+
+            <input type="radio" name="sex" id="idsxmale" value="M">
+            <label for="idsxmale">Male</label>
+
+            <input type="radio" name="sex" id="idsxfemale" value="F" checked>
+            <label for="idsxfemale">Female</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Favorite Sports</legend>
+
+            <input type="checkbox" name="sport-fut" id="idsport-fut" checked>
+            <label for="idsport-fut">Football</label><br>
+
+            <input type="checkbox" name="sport-bas" id="idsport-bas">
+            <label for="idsport-bas">Basketball</label><br>
+
+            <input type="checkbox" name="sport-swi" id="idsport-swi">
+            <label for="idsport-swi">Swimming</label><br>
+
+            <input type="checkbox" name="sport-ten" id="idsport-ten">
+            <label for="idsport-ten">Tennis</label><br>
+
+            <input type="checkbox" name="sport-vol" id="idsport-vol">
+            <label for="idsport-vol">Volleyball</label><br>
+
+            <input type="checkbox" name="sport-bad" id="idsport-bad">
+            <label for="idsport-bad">Badminton</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+
+    </form>
+    
+</body>
+</html>
