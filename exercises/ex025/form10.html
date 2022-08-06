@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms: output 3</title>
+</head>
+<body>
+    <a href="../root.html">../root</a>
+    <h1>Form testing</h1>
+
+    <form action="sign-up.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Example 1</legend>
+            <label for="id-year">Choose a year: </label>
+            <input type="number" name="year" id="id-year" min="1900" max="2022" value="2000" onclick="document.getElementById('id-age').innerHTML = Number(2022) - Number(document.getElementById('id-year').value) + ' years old'">
+            <output id="id-age"></output>
+        </fieldset>
+        <fieldset>
+            <legend>Example 2</legend>
+            <p>
+                <label for="idyear2">Choose a year: </label>
+                <input type="number" name="year2" id="idyear2" min="1900" max="2022" oninput="calcAge()">
+            </p>
+            <p>
+                <label for="idage2">You are: </label>
+                <output id="idage2">0 years old</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+
+    <script>
+        function calcAge() {
+            let actyear = new Date().getFullYear()
+            idage2.innerHTML = Number(actyear) - Number(idyear2.value) + ' years old'
+        }
+    </script>
+    
+</body>
+</html>
